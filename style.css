@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapers.com/images/featured/clean-4k-background-xpropngasdzqe58g.jpg'); /* Ganti 'URL_GAMBAR' dengan URL gambar latar belakang yang Anda inginkan */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Warna latar belakang header semi-transparan */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Warna latar belakang footer semi-transparan */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Untuk Firefox */
+    -ms-overflow-style: none; /* Untuk Internet Explorer 10+ */
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+.slider img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Ruang padding yang lebih sedikit pada tablet */
+    }
+
+    .menu li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section h2 {
+        font-size: 24px; /* Ukuran font yang lebih kecil pada tablet */
+    }
+
+    .gallery-images img {
+        width: 45%; /* Lebar gambar yang lebih kecil pada tablet */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        font-size: 16px; /* Ukuran font yang lebih kecil pada ponsel */
+    }
+
+    .section h2 {
+        font-size: 20px; /* Ukuran font yang lebih kecil pada ponsel */
+    }
+
+    .gallery-images img {
+        width: 100%; /* Lebar gambar penuh pada ponsel */
+    }
+}
